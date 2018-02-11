@@ -1,0 +1,19 @@
+.page-nav ul{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.page-nav li {
+    font-family: verdana, sans-serif;
+    font-size: 22px;
+    padding: 0 10px;
+}
+
+.page-nav:first-child {
+    padding-top: 40px;
+}
+
+.page-nav:last-child {
+    padding-bottom: 40px;
+}

@@ -1,0 +1,94 @@
+
+@font-face {
+    font-family: ds-font;
+    src: url(fonts/OptimusPrinceps.ttf);
+}
+
+html, body {
+    height: 100%;
+}
+
+b{
+    font-weight: bold;
+}
+
+body {
+    background-color: #223;
+    color: #e77;
+}
+
+.page-wrap {
+    min-height: 100%;
+    /* equal to footer height */
+    margin-bottom: -100px;
+}
+
+.page-wrap:after {
+    content: "";
+    display: block;
+}
+
+.site-footer, .page-wrap:after {
+    height: 100px;
+}
+
+.site-footer
+{
+    background-color: #500;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0,0,0,0.7);
+    background-image: url(../images/zig-zag.png);
+}
+
+footer p {
+    font-size: 26px;
+    padding-top: 35px;
+}
+
+#header {
+    background-color: #600;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0,0,0,0.7);
+    background-image: url(../images/zig-zag.png);
+    position: relative;
+}
+
+nav {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+nav ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    font-size: 24px;
+    font-family: verdana, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color:dodgerblue;
+}
+
+a:hover {
+    color:deepskyblue;
+}
+
+#container
+{
+    padding: 0 50px;
+    background-image: url(../images/zig-zag.png);
+}
+
+#page-title
+{
+    color: #e77;
+    letter-spacing: 3px;
+    font-size: 3.5em;
+    font-family: ds-font, serif;
+}

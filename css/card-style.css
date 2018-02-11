@@ -1,0 +1,195 @@
+.cards
+{
+    color: #e77;
+
+    padding: 50px 0;
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    opacity: 0;
+
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    animation: fadeIn .25s ease-in-out 0.25s;
+    -webkit-animation: fadeIn .25s ease-in-out 0.25s;
+
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode:forwards;
+}
+
+.card-wrapper
+{
+    padding: 0 10px;
+    width: 350px;
+    height: 580px;
+    position: relative;
+}
+
+.card
+{
+    background-color: #300;
+
+    position: absolute;
+    padding: 3%;
+    box-sizing: border-box;
+    width: 350px;
+    height: 490px;
+    top: 45px;
+
+    display: inline-block;
+
+    z-index: 0;
+
+    border: 0.25em solid #200;
+    border-radius: 20px;
+    text-align: left;
+    transform: scale(1);
+    box-shadow: 0 0 15px rgba(0,0,0,0.7);
+    background-image: url(../images/simple-dashed.png);
+
+    -webkit-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
+}
+
+
+
+.card:hover
+{
+    z-index: 10;
+
+    transform: scale(1.5);
+    box-shadow: 0 0 35px rgba(0,0,0,1);
+}
+
+.card-desc, .card-flav, .card-title
+{
+    font-size: 14px;
+    left: 6%;
+    width: 86%;
+    position: absolute;
+}
+
+.card-desc, .card-flav
+{
+    font-family: verdana, sans-serif;
+    letter-spacing: 1px;
+    line-height: 18px;
+}
+
+.card-challenge, .card-title-background, .card-text-background
+{
+    position: absolute;
+    border-radius: 10px;
+    width: 93%;
+    background: rgba(255,255,255,0.1);
+    box-sizing: border-box;
+}
+
+.card-challenge
+{
+    height: 4.5%;
+    float: left;
+    display: inline-block;
+}
+
+.card-id
+{
+    position: absolute;
+    top: 3%;
+    right: 6%;
+    color: #fcc;
+}
+
+.point
+{
+    position: relative;
+
+    padding: 1.3% 1%;
+    left: 1%;
+    width: 4.2%;
+    height: auto;
+}
+
+.card-img
+{
+    position: absolute;
+
+    box-sizing: border-box;
+    background-position: center;
+    background-size: cover;
+    width: 93%;
+    height: 40%;
+    border: 0.25em solid #200;
+    border-radius: 10px;
+    top: 9%;
+}
+
+.card-title-background
+{
+    height: 6%;
+    top: 51%;
+}
+
+.card-title
+{
+    letter-spacing: 3px;
+    color: #fcc;
+    height: 10%;
+    top: 52.5%;
+    font-size: 18px;
+    font-family: ds-font;
+}
+
+.card-text-background
+{
+    top: 59%;
+    height: 38%;
+}
+
+.card-desc
+{
+    top: 60.5%;
+}
+
+.card-desc ul {
+    position: relative;
+    width: 96%;
+    left: 6%;
+}
+
+.card-desc li
+{
+    list-style: disc outside none;
+}
+
+
+
+.card-flav
+{
+    font-size: 12px;
+    opacity: 0.8;
+    bottom: 4%;
+    font-style: italic;
+}
+
+.card-attr
+{
+    padding-top: 5px;
+    text-align: right;
+}
+
+
+/*********************
+ANIMATIONS
+*********************/
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
